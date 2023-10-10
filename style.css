@@ -168,13 +168,13 @@ body{
         background-image: url(img\ slider.jpg);
     }
     25%,49%{
-        background-image: url(img\ slider2.jpg);
+        background-image: url(/img\ slider1.jpg);
     }
     50%,74%{
-        background-image: url(img\ slider3.jpg);
+        background-image: url(/img\ slider2.jpg);
     }
     75%,100%{
-        background-image: url(img\ slider4.jpg);
+        background-image: url(/img\ slider3.jpg);
     }
 }
 .slider {
