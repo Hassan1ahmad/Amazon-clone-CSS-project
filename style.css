@@ -1,0 +1,490 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #E3E6E6;
+}
+
+
+/* Nav bar */
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+}
+
+
+/* <!-- 1st box amazon logo --> */
+.nav-logo{
+    width: 113px;
+    height: 50px;
+    margin-left: 11px;
+    padding-top:4px ;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.amazon-logo{
+    background-image: url(/amazon_logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+    padding: 1px 8px 0px 8px;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+.top-deli{
+    font-size: 0.8rem;
+    margin-left: 16px;
+    color: #cccc;
+}
+.bott-deli i{
+    font-size: 1rem;
+}
+.deliver{
+    height: 50px;
+    padding: 9px 8px 0px 8px;
+}
+
+
+/*  <!-- 3rd box search bar --> */
+.search-bar{
+    display: flex;
+    margin-right: 16px;
+    margin-left: 16px;
+    flex-wrap: wrap;
+}
+.select{
+    height: 40px;
+    width: 52px;
+    color: black;
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+    border: none;
+    background-color: #e6e6e6;
+    text-align: center;
+}
+.input{
+    height:40px;
+    width: 600px;
+    font-size: 1rem;
+    border: none;
+    padding-left:12px ; 
+}
+.search-icon{
+    height: 40px;
+    width: 52px;
+    background-color: #FEBD69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+.search-icon i{
+    font-size: 1.3rem;
+}
+
+
+/* <!-- 4th box sign in --> */
+.signin{
+    height: 40px;
+    width: 137px;
+    padding: 5px 7px 0px 7px;
+}
+.top-sign{
+    font-size: 12px;
+}
+.bott-sign{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* <!-- 5th box orders --> */
+.orders{
+    height: 40px;
+    width: 79px;
+    padding: 5px 7px 0px 7px;
+   
+}
+
+
+/* <!-- 6th box cart --> */
+.cart{
+    height: 40px;
+    width: 87px;
+    padding: 3px 7px 0px 7px;
+}
+.cart i{
+    font-size: 2rem;
+}
+/* 7th box for mobile search */
+.search-bar2{
+    display: none;
+}
+/* ---------------pannel */
+
+.pannel{
+    height: 39px;
+    background-color: #232F3E;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.pannel-option p{
+    display: inline;
+    margin-left: 14px;
+    padding: 5px;
+    cursor: pointer;
+}
+.icon-all,.deals{
+    padding: 5px;
+}
+.pannel-option{
+    width: 89%;
+}
+/* -----------=====================================---slider------ */
+.slider{
+    /* width: 1000px; */
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    animation: slide 32s  infinite;
+}
+@keyframes slide {
+    0%,24%{
+        background-image: url(/img\ slider.jpg);
+    }
+    25%,49%{
+        background-image: url(/img\ slider1.jpg);
+    }
+    50%,74%{
+        background-image: url(/img\ slider2.jpg);
+    }
+    75%,100%{
+        background-image: url(/img\ slider3.jpg);
+    }
+}
+.slider {
+    /* ... your existing styles ... */
+    position: relative; /* Allows the positioning of child pseudo-elements */
+      overflow: hidden;/* Hides any parts of the pseudo-element that might overflow the container */
+    /* overflow-y: auto; */
+    
+}
+.slider::after {
+    content: "";   /* Empty content to display the pseudo-element */
+    position: absolute; /* Absolute positioning to place it at the bottom */
+    bottom: -27px;
+    left: -16px;
+    right: -16px;
+    height: 30%; /* Height of the blurred area. Adjust as needed */
+    
+    /* Gradient to fade the effect into the image. Adjust colors if needed */
+    background: linear-gradient(to bottom, #E3E6E6, #E3E6E6);
+
+    /* The blur effect */
+    filter: blur(10px);
+    pointer-events: none;  /* Ensures the pseudo-element doesn't interfere with any interactions */
+    z-index: 1;
+
+}
+
+/* --------=========================---catagories---======================- */
+.catagories{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -250px;
+    justify-content: space-evenly;
+    z-index: 2;
+}
+.cata{
+    flex: 1 0 20%;
+    overflow-y: auto;
+    height: 380px;
+    /* border: 2px solid black; */
+    background-color:#FFFFFF;
+    margin: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px;
+}
+.gaming-1 .keyboard,.headphone{
+    color: black;
+    width: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: lighter;
+    
+}
+.gaming-1{
+    display: flex;
+    
+}
+.gamingimage{
+    margin: 3px;
+    transform: translate(-26px, 7px);
+}
+.seemore{
+    color: rgb(143, 203, 222);
+    font-size: 15px;
+    cursor: pointer;
+}
+.toy1 img{
+    width: 100%;
+    height: 275px;
+    margin-top: 10px;
+}
+
+.electronics1 img{
+    width: 100%;
+    height: 280px;
+}
+.ship{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.kitchen1 img, 
+.health1 img, 
+.computer1 img, 
+.fitnes1 img {
+    width: 100%;
+    height: 270px;
+}
+/*------------------------------------ Footer------------------------------- */
+/* -----------------------------panel1-------------------------------- */
+.panel-1{
+    height: 49px;
+    background-color: #485769;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+}
+.panel-2{
+    height: 400px;
+    background-color: #232F3E;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    
+}
+.coloumn-1st,.coloumn-2nd,.coloumn-3rd,.coloumn-4th div{
+    font-size: 14px;
+}
+
+.coloumn-1st div, 
+.coloumn-2nd div, 
+.coloumn-3rd div, 
+.coloumn-4th div {
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.coloumn-1st ul li, 
+.coloumn-2nd ul li, 
+.coloumn-3rd ul li, 
+.coloumn-4th ul li {
+    list-style: none;
+    font-size: 15px;
+    margin-top: 18px;
+    color: #ddd;
+    cursor: pointer;
+}
+.coloumn-1st ul li:hover, 
+.coloumn-2nd ul li:hover, 
+.coloumn-3rd ul li:hover, 
+.coloumn-4th ul li:hover,
+.panel3-content ul li:hover {
+    text-decoration: underline;
+}
+.panel-3{
+    height: 100px;
+    background-color: #131A22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel-3 ul li{
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.panel3-content-2{
+    transform: translateX(60px);
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------- key frame for Small devices (phones)------------------------------- */
+@media (max-width: 576px) {
+   .navbar{
+    width: calc(100%);
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    
+   }
+   .search-bar,.deliver,.orders,.cart {
+     display: none;
+   }
+   .search-bar2{
+    display: flex;
+    background-color: #0f1111;   
+   }
+   .input2{
+    height:40px;
+    width: 20.5rem;
+    font-size: 1rem;
+    border: none;
+    /* background-color: #0f1111;               */
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+    padding-left: 10px;
+   }
+   .search-icon2{
+    height: 40px;
+    width: 52px;
+    background-color: #FEBD69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+.search-icon2 i{
+    font-size: 1.3rem;
+}
+
+   .cart i{
+    font-size: 1rem;
+    }
+    /*----------------------- panels----------------------l */
+.pannel-option {
+    font-size: 15px;
+    display: flex;            /* Make child elements display in a row */
+    overflow-x: auto;         /* Enable horizontal scrolling */
+    white-space: nowrap;      /* Prevent wrapping of child elements to the next line */
+}
+
+.pannel-option .border {
+    flex: 0 0 auto;          /* Prevent children from stretching or shrinking */
+     margin-right: 5px;     /* Optional: Add some spacing between each item */
+     margin-left: 0px;
+}
+
+/* Hide scrollbar but allow scrolling - Optional */
+.pannel-option::-webkit-scrollbar {
+    display: none;
+}
+.pannel-option {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.icon-all{
+    width: 61px;
+}
+.deals{
+    width: 117px;
+}
+/* ----------------------Catagories--------------------------- */
+/* slider */
+.slider{
+    height: 200px;
+    
+}
+.catagories{
+    margin-top: -100px;
+}
+.cata{
+    flex: 1 0 40%;
+    height: 200px;
+    font-size: 10px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.kitchen1 img, 
+.health1 img, 
+.computer1 img, 
+.fitnes1 img {
+    width: 100%;
+    height: 139px;
+}
+.seemore{
+    color: rgb(143, 203, 222);
+    font-size: 10px;
+    cursor: pointer;
+}
+.toy1 img{
+    width: 100%;
+    height: 140px;
+    margin-top: 10px;
+}
+
+.electronics1 img{
+    width: 100%;
+    height: 142px;
+}
+.gaming-1 {
+    display: block; /* Stack children vertically on mobile by default */
+}
+
+.gaming-1 .keyboard, .headphone {
+    width: 100%; /* Take full width on mobile */
+    display: block;
+    text-align: center; /* Center the text */
+}
+
+.gamingimage {
+    display: block;
+    margin: 10px auto; /* Horizontally center the image */
+    transform: none; /* Reset the translation */
+}
+
+
+}
+
+
