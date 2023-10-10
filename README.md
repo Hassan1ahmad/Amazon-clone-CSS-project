@@ -1,7 +1,3 @@
-# Amazon-clone-CSS-project
-Certainly! Here's a README file for your Amazon clone project:
-
----
 
 # Amazon Clone: HTML & CSS Practice
 
