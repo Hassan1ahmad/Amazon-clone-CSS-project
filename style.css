@@ -32,7 +32,7 @@ body{
 
 }
 .amazon-logo{
-    background-image: url(/amazon_logo.png);
+    background-image: url(amazon_logo.png);
     background-size: cover;
     height: 50px;
     width: 100%;
@@ -165,16 +165,16 @@ body{
 }
 @keyframes slide {
     0%,24%{
-        background-image: url(/img\ slider.jpg);
+        background-image: url(img\ slider.jpg);
     }
     25%,49%{
-        background-image: url(/img\ slider1.jpg);
+        background-image: url(img\ slider1.jpg);
     }
     50%,74%{
-        background-image: url(/img\ slider2.jpg);
+        background-image: url(img\ slider2.jpg);
     }
     75%,100%{
-        background-image: url(/img\ slider3.jpg);
+        background-image: url(img\ slider3.jpg);
     }
 }
 .slider {
